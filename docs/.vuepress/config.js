@@ -57,19 +57,11 @@ module.exports = {
                 }
             ]
         },
-        sidebar: [
-            {
-                title: 'Group 1',
-                collapsable: false,
-                children: [
-                    '/'
-                ],
-            },
-            {
-                '/guide/': genSidebarConfig('Guide'),
-                '/zh/guide/': genSidebarConfig('指南')
-            }
-        ]
+        sidebar: {
+            '/guide/': genSidebarConfig('Guide'),
+            '/zh/guide/': genSidebarConfig('指南')
+        }
+
     }
 }
 
